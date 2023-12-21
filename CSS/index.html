@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        * {
+            font-family: "press start 2p";
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header {
+            border-bottom: 15px solid white;
+        }
+
+        header div button {
+            padding: 10px;
+            margin: 20px;
+            font-size: 40px;
+        }
+
+        header div p {
+            font-size: 33px;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .number {
+            font-size: 80px;
+            background-color: brown;
+            width: 150px;
+            padding: 20px;
+            margin: 20px;
+            justify-content: center;
+            position: relative;
+            left: 42%;
+            top: 80px;
+        }
+
+        .guess {
+            width: 80px;
+            margin: 10px;
+            padding: 10px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .ckeckBtn {
+            padding: 5px;
+            width: 100px;
+            height: 30px;
+            margin: 10px;
+
+        }
+
+        .right {
+            margin: 10px;
+        }
+
+        .main1 {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 150px;
+
+        }
+        
+       
+        
+        
+
+        @media screen and  (min-width:375px) and (max-width:480px) {
+            header div button {
+            padding: 10px;
+            margin: 20px;
+            font-size: 13px;
+        }
+        header div p {
+            font-size: 13px;
+        }
+        h1 {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 50px;
+        } 
+        .number{
+            font-size:40px;
+            width:80px;
+            padding: 20px;
+            margin: 20px;
+            justify-content: center;
+            position: relative;
+            left: 30%;
+            top: 70px; 
+            
+        }
+        
+        }
+
+        @media screen and  (min-width:481px) and (max-width:550px) {
+            header div button {
+            padding: 10px;
+            margin: 20px;
+            font-size: 16px;
+        }
+        header div p {
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }  
+        .number{
+            font-size:50px;
+            width:80px;
+            padding: 20px;
+            margin: 20px;
+            justify-content: center;
+            position: relative;
+            left: 32%;
+            top: 70px; 
+            
+        }
+        }
+
+        @media screen and  (min-width:550px) and (max-width:651px) {
+            header div button {
+            padding: 10px;
+            margin: 20px;
+            font-size: 20px;
+        }
+        header div p {
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 50px;
+        }  
+        .number{
+            font-size:60px;
+            width:100px;
+            padding: 20px;
+            margin: 20px;
+            justify-content: center;
+            position: relative;
+            left: 34%;
+            top: 70px; 
+            
+        }
+        }
+
+
+        @media screen and  (min-width:651px) and (max-width:750px) {
+            header div button {
+            padding: 10px;
+            margin: 20px;
+            font-size: 23px;
+        }
+        header div p {
+            font-size: 25px;
+        }
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }  
+        .number{
+            font-size:70px;
+            width:120px;
+            padding: 20px;
+            margin: 20px;
+            justify-content: center;
+            position: relative;
+            left: 36%;
+            top: 70px; 
+            
+        }
+        }
+
+        @media screen and  (min-width:750px) and (max-width:900px) {
+            header div button {
+            padding: 10px;
+            margin: 20px;
+            font-size: 27px;
+        }
+        header div p {
+            font-size: 28px;
+        }
+        h1 {
+            font-size: 35px;
+            text-align: center;
+            margin-top: 50px;
+        }  
+        .number{
+            font-size:70px;
+            width:130px;
+            padding: 20px;
+            margin: 20px;
+            justify-content: center;
+            position: relative;
+            left: 36%;
+            top: 80px; 
+            
+        }
+        }
+
+
+        @media screen and  (min-width:750px) and (max-width:900px) {
+            header div button {
+            padding: 10px;
+            margin: 20px;
+            font-size: 30;
+        }
+        header div p {
+            font-size: 28px;
+        }
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }  
+        .number{
+            font-size:70px;
+            width:130px;
+            padding: 20px;
+            margin: 20px;
+            justify-content: center;
+            position: relative;
+            left: 40%;
+            top: 80px; 
+            
+        }
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <button id="againBtn"> Again! </button>
+            <p>
+                (Between 1 and 20)
+            </p>
+        </div>
+        <h1>
+            Guess My Number!
+        </h1>
+        <div class="number">
+            ?
+        </div>
+    </header>
+    <main class=" main1">
+        <section class="left">
+            <input type="number" name="Guess" class="guess" id="guess"><br>
+            <button class="ckeckBtn" id="checkBtn">
+                Check!
+            </button>
+        </section>
+        <section class="right">
+            <p class="message" style="padding-bottom: 20px; padding-top:10px;">Start guessing...</p>
+            <p class="label-score" style="padding-bottom: 15px;">
+                Score: <span id="score">20</span>
+            </p>
+            <p class="label-highscore">
+                HighScore: <span id="highscore">0</span>
+            </p>
+        </section>
+    </main>
+</body>
+<script>
+    let RandomNumber = Math.trunc(Math.random() * 20 + 1);
+    console.log(RandomNumber);
+    let score = 20;
+    let highscore = 0;
+    // console.log((RandomNumber));
+    document.getElementById("checkBtn").addEventListener("click", () => {
+        let GuessedNumber = Number(document.getElementById("guess").value);
+
+        if (!GuessedNumber) {
+            document.querySelector(".message").textContent = "NO NUMBER!";
+        }
+        else if (GuessedNumber === RandomNumber) {
+            document.querySelector(".message").textContent = "CORRECT NUMBER";
+            document.querySelector("body").style.backgroundColor = "lightGreen";
+            document.querySelector(".number").textContent = RandomNumber;
+
+            if (score > highscore) {
+                highscore = score;
+                document.getElementById("highscore").textContent = highscore;
+            }
+        }
+        else if (GuessedNumber > RandomNumber) {
+            if (score > 1) {
+                document.querySelector(".message").textContent = "TOO HIGH!";
+                score = score - 1;
+                document.getElementById("score").textContent = score;
+            } else {
+                document.querySelector(".message").textContent = "You Lost The Game!";
+            }
+        }
+        else if (GuessedNumber < RandomNumber) {
+            if (score > 1) {
+                document.querySelector(".message").textContent = "TOO LOW!";
+                score = score - 1;
+                document.getElementById("score").textContent = score;
+            }
+            else {
+                document.querySelector(".message").textContent = "You Lost The Game!";
+            }
+        }
+    })
+
+    document.getElementById("againBtn").addEventListener("click", ()=> {
+        score = 20;
+        RandomNumber = Math.trunc(Math.random() * 20 )+1;
+        console.log(RandomNumber);
+        document.getElementById("score").textContent = score;
+        
+        document.querySelector(".number").textContent = "?";
+        document.querySelector(".message").textContent = "Start guessing...";
+        document.querySelector("body").style.backgroundColor = "black";
+    })
+</script>
+
+</html>
